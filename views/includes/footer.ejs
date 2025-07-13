@@ -1,0 +1,122 @@
+<style>
+  footer {
+    background-color: #886f6e;
+    color: #f0f0f0;
+    padding: 40px 0;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 60px;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-col {
+    flex: 1 1 200px;
+    margin: 20px 0;
+  }
+
+  .footer-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00dfc4;
+  }
+
+  .footer-col h4 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 1.1rem;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-col ul li a {
+    text-decoration: none;
+    color: #aaa;
+    transition: color 0.3s;
+  }
+
+  .footer-col ul li a:hover {
+    color: #ffffff;
+  }
+
+  .footer-socials i {
+    font-size: 1.4rem;
+    margin-right: 15px;
+    color: #aaa;
+    transition: color 0.3s, transform 0.3s;
+    cursor: pointer;
+  }
+
+  .footer-socials i:hover {
+    color: #00dfc4;
+    transform: scale(1.2);
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #090909;
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-col {
+      margin: 20px 0;
+    }
+  }
+</style>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-col">
+      <div class="footer-logo">Nestify</div>
+      <p>Your trusted partner in finding comfort away from home.</p>
+      <div class="footer-socials mt-2">
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="/listings">All Listings</a></li>
+        <li><a href="/about">About Nestify</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="/terms">Terms & Conditions</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; <%= new Date().getFullYear() %> Nestify Pvt. Ltd. All rights reserved.
+  </div>
+</footer>
