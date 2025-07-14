@@ -81,9 +81,7 @@ app.use("/" , userRouter);
 
 
 
-// app.all("*", (req,res,next) => {
-//     next(new ExpressError(404,"Page Not Found"));
-//   });
+
   
   app.use((err, req, res, next) => {
     const statusCode = err.statusCode || 500;
@@ -93,6 +91,10 @@ app.use("/" , userRouter);
     res.render("error.ejs" ,{message,err});
   });
   
+// app.all("*", (req, res, next) => { 
+//   res.status(404).send('404 NOT FOUND ' );
+// });
+
   app.listen(8080, () => {
     console.log("working on 8080");
   });
